@@ -32,9 +32,10 @@ def janken
      
      if c == d
        puts "あなたの勝ちです。"
+       return true
      else
        puts "残念。"
-       
+       return true
      end
      
      
@@ -52,8 +53,10 @@ def janken
      
       if e == f
         puts "負けました。"
+        return true
       else
         puts "セーフ"
+        return true
       end
       
    end
@@ -61,7 +64,7 @@ end
 
 next_game = true
 
-while next_game
+while next_game 
   next_game = janken
 end
 
